@@ -64,6 +64,26 @@
         tapping-term-ms = <200>;
     };
 
+    ht_mo_bal: ht_mo_bal {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Hold Tap Momentary Layer (Balanced)";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "balanced";
+        tapping-term-ms = <200>;
+    };
+
+    ht_mo_tp: ht_mo_tp {
+        compatible = "zmk,behavior-hold-tap";
+        label = "Hold Tap Momentary Layer (Tap Preferred))";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
     };
 
