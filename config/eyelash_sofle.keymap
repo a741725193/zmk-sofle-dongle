@@ -136,20 +136,20 @@
     keymap {
         compatible = "zmk,keymap";
 
-        main {
+        MAIN {
             bindings = <
-&kp ESC           &kp N1        &kp N2        &kp N3   &kp N4     &kp N5    &kp HOME         &kp N6  &kp N7     &kp N8         &kp N9         &kp N0             &kp MINUS
-&kp EQUAL         &kp Q         &kp W         &kp E    &kp R      &kp T     &kp END          &kp Y   &kp U      &kp I          &kp O          &kp P              &kp BSLH
-&kp LEFT_CONTROL  &kp A         &kp S         &kp D    &kp F      &kp G     &kp LEFT_ARROW   &kp H   &kp J      &kp K          &kp L          &kp SEMI           &kp APOS
-&kp LSHFT         &kp Z         &kp X         &kp C    &kp V      &kp B     &kp RIGHT_ARROW  &kp N   &kp M      &kp COMMA      &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
-&kp DELETE        &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB  &kp SPACE  &mo 1     &kp ENTER        &mo 2   &kp ENTER  &kp BACKSPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESC           &kp N1        &kp N2        &kp N3       &kp N4                 &kp N5    &kp HOME         &kp N6  &kp N7                 &kp N8         &kp N9         &kp N0             &kp MINUS
+&kp EQUAL         &kp Q         &kp W         &kp E        &kp R                  &kp T     &kp END          &kp Y   &kp U                  &kp I          &kp O          &kp P              &kp BSLH
+&kp LEFT_CONTROL  &kp A         &kp S         &hml_mo 3 D  &hml_bal LEFT_SHIFT F  &kp G     &kp LEFT_ARROW   &kp H   &hmr_bal LEFT_SHIFT J  &hmr_mo 3 K    &kp L          &kp SEMI           &kp APOS
+&kp LSHFT         &kp Z         &kp X         &kp C        &kp V                  &kp B     &kp RIGHT_ARROW  &kp N   &kp M                  &kp COMMA      &kp DOT        &kp FSLH           &kp RIGHT_SHIFT
+&kp DELETE        &kp LEFT_GUI  &kp LEFT_ALT  &kp TAB      &kp SPACE              &mo 1     &kp ENTER        &mo 2   &kp ENTER              &kp BACKSPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp PAGE_UP PAGE_DOWN>;
+            sensor-bindings = <&inc_dec_kp PAGE_DOWN PAGE_UP>;
             display-name = "LAYER0";
         };
 
-        layer_1 {
+        L1 {
             bindings = <
 &kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &kp F11
 &trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp F12
@@ -158,11 +158,11 @@
 &kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
             >;
 
-            display-name = "layer1";
+            display-name = "L1";
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_2 {
+        L2 {
             bindings = <
 &kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &kp F11
 &trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp F12
@@ -174,13 +174,13 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        SYMBOL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans            &trans             &trans  &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5    &trans  &kp N6    &kp N7    &kp N8            &kp N9             &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp DOWN  &kp UP            &kp RIGHT          &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &kp DELETE        &trans             &trans
             >;
         };
     };
