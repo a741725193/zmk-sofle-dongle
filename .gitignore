@@ -3,3 +3,23 @@ zmk/
 modules/
 tools/
 .west/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Thumbnails / Finder
+.Spotlight-V100
+.Trashes
+.fseventsd
+
+# Python virtualenv (local tooling)
+.venv/
+
+# Editor / OS temp
+*.swp
+*.swo
+*~
