@@ -22,6 +22,7 @@ GitHub Actions builds the following firmware images (see `build.yaml`):
 1. Fork this repository.
 2. Go to **Actions** and enable workflows (if prompted).
 3. Make changes (keymap/config) and commit.
+	- Alternative: use the Keymap Editor web UI (requires GitHub authorization): https://nickcoutsos.github.io/keymap-editor/
 4. Open the latest **Build ZMK firmware** run and download the artifact(s).
 5. Flash the correct `.uf2` to the dongle/left/right as needed.
 
@@ -51,7 +52,7 @@ Important note from the official docs: once you start managing the keymap via ZM
 ## Documentation
 
 - Dongle usage and setup: docs/dongle-usage.md
-- Keymap modification (GitHub Actions + flashing): docs/keymap.md
+- Keymap modification (GitHub Actions + flashing + Keymap Editor): docs/keymap.md
 
 ## Keymap diagram
 

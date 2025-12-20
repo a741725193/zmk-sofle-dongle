@@ -28,6 +28,25 @@ Tip: some shield default keymaps also exist under `boards/shields/**`, but for t
 5. GitHub Actions will run automatically (or use **Run workflow**).
 6. Download the build artifact from the Actions run.
 
+## Alternative: Keymap Editor (web UI)
+
+Keymap Editor is a convenient way to change key bindings (and some simple configuration) using a graphical UI:
+
+- https://nickcoutsos.github.io/keymap-editor/
+
+How it works (high level):
+
+1. Log in with GitHub.
+2. Authorize the Keymap Editor app to access your GitHub repositories.
+3. Select your fork of this ZMK config repo from the list.
+4. Make changes and click **Save**.
+5. GitHub Actions builds new firmware automatically.
+
+Security note:
+
+- Authorizing Keymap Editor grants it access to one or more of your GitHub repositories (depending on what you approve).
+- Only do this if you are comfortable with that access and your repo does not contain sensitive information.
+
 ## Flashing the firmware (`.uf2`)
 
 1. Connect the target device (dongle, left, or right) via USB.
