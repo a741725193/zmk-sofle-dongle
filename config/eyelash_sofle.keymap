@@ -55,7 +55,7 @@
         flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <160>;
         hold-trigger-on-release;
         hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 45 46 47 48 49 50 51 58 19 32 6 52 60 61 62 63 53 54 55 56 57 59 60>;
     };
@@ -69,7 +69,7 @@
         flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <160>;
         hold-trigger-on-release;
         hold-trigger-key-positions = <0 1 2 3 4 5 6 13 14 15 16 17 18 19 26 27 28 29 30 31 32 39 40 41 42 43 44 45 52 53 54 55 56 58 57 59 60 61 62 63>;
     };
@@ -83,7 +83,7 @@
         flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <160>;
         hold-trigger-on-release;
         hold-trigger-key-positions = <7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 45 46 47 48 49 50 51 58 19 32 6 52 60 61 62 63 53 54 55 56 57 59 60>;
     };
@@ -94,10 +94,10 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
         tapping-term-ms = <280>;
         quick-tap-ms = <175>;
-        require-prior-idle-ms = <125>;
+        require-prior-idle-ms = <160>;
         hold-trigger-on-release;
         hold-trigger-key-positions = <0 1 2 3 4 5 6 13 14 15 16 17 18 19 26 27 28 29 30 31 32 39 40 41 42 43 44 45 52 53 54 55 56 57 58 59 60 61 62 63>;
     };
@@ -110,11 +110,11 @@
 
         MAIN {
             bindings = <
-&kp ESC           &kp N1                  &kp N2              &kp N3       &kp N4                &kp N5    &kp UP_ARROW     &kp N6  &kp N7                &kp N8         &kp N9               &kp N0                           &kp MINUS
-&kp EQUAL         &kp Q                   &kp W               &kp E        &kp R                 &kp T     &kp DOWN_ARROW   &kp Y   &kp U                 &kp I          &kp O                &kp P                            &kp BSLH
-&kp LEFT_CONTROL  &hml_kp LEFT_CONTROL A  &hml_kp LEFT_ALT S  &hml_mo 3 D  &hml_kp LEFT_SHIFT F  &kp G     &kp LEFT_ARROW   &kp H   &hmr_kp LEFT_SHIFT J  &hmr_mo 3 K    &hmr_kp RIGHT_ALT L  &hmr_kp RIGHT_CONTROL SEMICOLON  &kp APOS
-&kp LSHFT         &kp Z                   &kp X               &kp C        &kp V                 &kp B     &kp RIGHT_ARROW  &kp N   &kp M                 &kp COMMA      &kp DOT              &kp FSLH                         &kp RIGHT_SHIFT
-&kp K_MUTE        &kp LEFT_GUI            &kp LEFT_ALT        &kp TAB      &kp SPACE             &mo 1     &kp ENTER        &mo 2   &kp ENTER             &kp BACKSPACE  &kp RIGHT_ALT        &kp RIGHT_CONTROL
+&kp ESC           &kp N1        &kp N2              &kp N3       &kp N4                      &kp N5    &kp UP_ARROW     &kp N6  &kp N7                &kp N8         &kp N9               &kp N0                           &kp MINUS
+&kp GRAVE         &kp Q         &kp W               &kp E        &kp R                       &kp T     &kp DOWN_ARROW   &kp Y   &kp U                 &kp I          &kp O                &kp P                            &kp BSLH
+&kp LEFT_CONTROL  &hml_mo 3 A   &hml_kp LEFT_ALT S  &hml_mo 3 D  &hml_kp LEFT_SHIFT F        &kp G     &kp LEFT_ARROW   &kp H   &hmr_kp LEFT_SHIFT J  &hmr_mo 3 K    &hmr_kp RIGHT_ALT L  &hmr_kp RIGHT_CONTROL SEMICOLON  &kp APOS
+&kp LSHFT         &kp Z         &kp X               &kp C        &kp V                       &kp B     &kp RIGHT_ARROW  &kp N   &kp M                 &kp COMMA      &kp DOT              &kp FSLH                         &kp RIGHT_SHIFT
+&kp K_MUTE        &kp LEFT_GUI  &kp LEFT_ALT        &kp TAB      &hml_kp LEFT_CONTROL SPACE  &mo 1     &kp ENTER        &mo 2   &kp ENTER             &kp BACKSPACE  &kp RIGHT_ALT        &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -158,6 +158,18 @@
             >;
 
             label = "Symbol";
+        };
+
+        NUMBERS {
+            bindings = <
+&trans  &trans  &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp KP_NUMBER_1  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans           &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Numbers";
         };
     };
 };
