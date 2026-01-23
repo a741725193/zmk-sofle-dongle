@@ -44,6 +44,17 @@
         tap-ms = <30>;
     };
 
+    tapprefer: tapprefer {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TAPPREFER";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <250>;
+        quick-tap-ms = <175>;
+        flavor = "tap-preferred";
+    };
+
     macros {
         shift_MB3: shift_MB3 {
             compatible = "zmk,behavior-macro";
@@ -69,11 +80,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1     &kp N2            &kp N3              &kp N4     &kp N5           &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9                &kp N0                 &mt COLON MINUS
-&kp TAB     &kp Q      &kp W             &kp E               &kp R      &kp T            &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O                 &kp P                  &kp BSLH
-&kp CAPS    &kp A      &kp S             &kp D               &kp F      &kp G            &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L                 &kp SEMI               &kp APOS
-&mo 3       &kp Z      &kp X             &kp C               &kp V      &kp B            &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT               &kp FSLH               &kp ENTER
-&kp C_MUTE  &kp LCTRL  &mt LEFT_ALT DEL  &mt LEFT_GUI ENTER  &lt 1 F13  &kp BACKSPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 2      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp ESC                              &kp N1     &kp N2        &kp N3              &kp N4     &kp N5                    &kp UP_ARROW     &kp N6                       &kp N7     &kp N8     &kp N9                     &kp N0                               &mt COLON MINUS
+&tapprefer LA(LG(LEFT_CONTROL)) TAB  &kp Q      &kp W         &kp E               &kp R      &kp T                     &kp DOWN_ARROW   &kp Y                        &kp U      &kp I      &kp O                      &kp P                                &kp EQUAL
+&mt LEFT_SHIFT CAPSLOCK              &kp A      &kp S         &kp D               &kp F      &kp G                     &kp LEFT_ARROW   &kp H                        &kp J      &kp K      &kp L                      &kp SEMI                             &kp APOS
+&kp LA(LS(LG(K_CONTEXT_MENU)))       &kp Z      &kp X         &kp C               &kp V      &kp B                     &kp RIGHT_ARROW  &kp N                        &kp M      &kp COMMA  &kp DOT                    &kp FSLH                             &kp BACKSLASH
+&kp C_MUTE                           &kp LCTRL  &kp LEFT_ALT  &mt LEFT_GUI ENTER  &lt 1 F13  &mt LEFT_ALT BACKSPACE    &kp ENTER        &tapprefer LEFT_SHIFT SPACE  &kp ENTER  &mo 2      &mt LBKT LEFT_PARENTHESIS  &mt RIGHT_BRACKET RIGHT_PARENTHESIS
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -116,5 +127,3 @@
         };
     };
 };
-
-
