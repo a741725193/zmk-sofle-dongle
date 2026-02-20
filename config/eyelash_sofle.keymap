@@ -87,7 +87,7 @@
 &kp LEFT_ALT   &kp FSLH   &kp P         &kp O         &kp U       &kp COMMA      &kp DOWN_ARROW   &kp DOT    &kp D          &kp L      &kp C            &kp X       &kp RCTRL
 &kp LSHFT      &kp I      &kp N         &kp E         &kp A       &kp B          &kp LEFT_ARROW   &kp M      &kp H          &kp T      &kp S            &kp R       &kp APOS
 &kp LCTRL      &kp Q      &kp J         &kp F         &kp Y       &kp BSLH       &kp RIGHT_ARROW  &kp Z      &kp W          &kp G      &kp K            &kp V       &kp TAB
-&mo 1          &mo 2      &kp SPACE     &kp SPACE     &kp LSHFT   &kp LEFT_GUI   &kp ENTER        &kp ESC    &kp BACKSPACE  &kp ENTER  &kp ENTER        &mo 2
+&mo 1          &mo 2      &kp SPACE     &kp SPACE     &kp LSHFT   &kp LEFT_GUI   &kp ENTER        &kp ESC    &kp BACKSPACE  &kp ENTER  &kp ENTER        &kp LSHFT
             >;
             sensor-bindings = <&rsr_vol &rsr_trans>;
 
@@ -100,7 +100,7 @@
 &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &mmv MOVE_DOWN   &kp N6     &kp N7      &kp N8      &kp N9               &kp N0             &trans
 &trans      &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &trans      &mmv MOVE_LEFT   &kp SEMI   &kp COMMA   &kp DOT     &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &trans
 &trans      &trans      &trans      &trans      &trans      &trans      &mmv MOVE_RIGHT  &trans     &kp MINUS   &kp PLUS    &kp GRAVE            &kp BSLH           &trans
-&trans      &trans      &trans      &trans      &trans      &trans      &mkp LCLK        &trans     &kp LPAR    &kp RPAR    &trans               &trans
+&trans      &trans      &trans      &trans      &trans      &kp F24     &mkp LCLK        &trans     &kp LPAR    &kp RPAR    &trans               &trans
             >;
 
             display-name = "layer1";
