@@ -99,7 +99,7 @@
 &trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &mmv MOVE_UP     &kp F6     &kp F7      &kp F8      &kp F9               &kp F10            &trans
 &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &mmv MOVE_DOWN   &kp N6     &kp N7      &kp N8      &kp N9               &kp N0             &trans
 &trans      &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &trans      &mmv MOVE_LEFT   &kp SEMI   &kp COMMA   &kp DOT     &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &trans
-&trans      &trans      &trans      &trans      &trans      &trans      &mmv MOVE_RIGHT  &trans     &kp MINUS   &kp PLUS    &kp GRAVE            &kp BSLH           &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &mmv MOVE_RIGHT  &trans     &kp MINUS   &kp PLUS    &kp BSLSH            &kp GRAVE          &trans
 &trans      &trans      &trans      &trans      &trans      &kp F24     &mkp LCLK        &trans     &kp LPAR    &kp RPAR    &trans               &trans
             >;
 
