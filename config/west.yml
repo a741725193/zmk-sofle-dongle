@@ -37,12 +37,7 @@ manifest:
       remote: tokyo2006
       revision: micro_spi2
     - name: zmk-dongle-display
-<<<<<<< HEAD
       remote: englmaxi
-=======
-      remote: ritzier
->>>>>>> c825660 (fix(west): pin zmk-dongle-display to v0.3)
       revision: v0.3
   self:
     path: config
-
