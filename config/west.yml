@@ -41,3 +41,4 @@ manifest:
       revision: v0.3
   self:
     path: config
+
