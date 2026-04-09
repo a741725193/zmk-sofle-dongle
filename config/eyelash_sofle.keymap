@@ -57,7 +57,6 @@
                 <&macro_release>,
                 <&mkp MB3 &kp LEFT_SHIFT>;
 
-            label = "SHIFT_MB3";
         };
     };
 

@@ -1,21 +1,21 @@
 ---
 include:
- # - board: nice_nano_v2
+ # - board: nice_nano//zmk
  #   shield: eyelash_sofle_central_dongle prospector_adapter
  #  snippet: studio-rpc-usb-uart
  #  snippet: studio-rpc-usb-uart
  #   cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
  #   artifact-name: eyelash_sofle_central_dongle
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: eyelash_sofle_central_dongle dongle_display
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_STUDIO_LOCKING=n
     artifact-name: eyelash_sofle_central_dongle_oled
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
  #  shield: eyelash_sofle_peripheral_left nice_view_custom
     shield: eyelash_sofle_peripheral_left nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
  #  shield: eyelash_sofle_peripheral_right nice_view_custom
     shield: eyelash_sofle_peripheral_right nice_view
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
