@@ -8,6 +8,8 @@ manifest:
       url-base: https://github.com/tokyo2006
     - name: englmaxi
       url-base: https://github.com/englmaxi
+    - name: mctechnology17
+      url-base: https://github.com/mctechnology17
   projects:
     - name: mario-peripheral-animation
       remote: gpeye
