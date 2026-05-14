@@ -13,9 +13,9 @@ include:
     artifact-name: eyelash_sofle_central_dongle_oled
   - board: nice_nano_v2
  #  shield: eyelash_sofle_peripheral_left 
-    shield: eyelash_sofle_peripheral_left
+    shield: eyelash_sofle_peripheral_left nice_oled
   - board: nice_nano_v2
  #  shield: eyelash_sofle_peripheral_right 
-    shield: eyelash_sofle_peripheral_right 
+    shield: eyelash_sofle_peripheral_right nice_oled 
   - board: nice_nano_v2
     shield: settings_reset
