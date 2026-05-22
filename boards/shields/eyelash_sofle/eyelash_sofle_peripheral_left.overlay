@@ -1,17 +1,18 @@
 /*
-*
-* Copyright (c) 2021 Darryl deHaan
-* SPDX-License-Identifier: MIT
-*
-*/
+ *
+ * Copyright (c) 2021 Darryl deHaan
+ * SPDX-License-Identifier: MIT
+ *
+ */
 
 #include "eyelash_sofle.dtsi"
+#include <behaviors/battery_history_request.dtsi>
 / {
 
     chosen {
-      
+
         zephyr,display = &oled;
-      
+
 
     };
   };
