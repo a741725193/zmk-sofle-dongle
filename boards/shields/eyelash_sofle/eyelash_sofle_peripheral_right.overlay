@@ -4,7 +4,9 @@
 * SPDX-License-Identifier: MIT
 *
 */
+
 #include "eyelash_sofle.dtsi"
+#include <behaviors/battery_history_request.dtsi>
 
 &kscan0 {
     compatible = "zmk,kscan-gpio-matrix";
