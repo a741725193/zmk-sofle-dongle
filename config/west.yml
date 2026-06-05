@@ -23,7 +23,7 @@ manifest:
       revision: main
     - name: zmk-module-ble-management
       remote: cormoran
-      revision: main
+      revision: zmk-v0.3.0.0
     - name: zmk-module-battery-history
       remote: cormoran
       revision: main
@@ -32,7 +32,7 @@ manifest:
       revision: main
     - name: zmk-module-runtime-input-processor
       remote: cormoran
-      revision: main
+      revision: zmk-v0.3.0.0
     - name: prospector-zmk-module
       remote: tokyo2006
       revision: micro_spi2
