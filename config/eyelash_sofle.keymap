@@ -83,11 +83,11 @@
 
         layer0 {
             bindings = <
-&kp EQUAL   &kp N1        &kp N2        &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6     &kp N7         &kp N8     &kp N9           &kp N0      &kp RIGHT_BRACKET
-&kp MINUS   &kp FSLH      &kp P         &kp O         &kp U          &kp COMMA    &kp DOWN_ARROW   &kp DOT    &kp D          &kp L      &kp C            &kp X       &kp LEFT_BRACKET
-&kp LSHFT   &kp I         &kp N         &kp E         &kp A          &kp B        &kp LEFT_ARROW   &kp M      &kp H          &kp T      &kp S            &kp R       &kp APOS
-&kp LCTRL   &kp Q         &kp J         &kp F         &kp Y          &kp BSLH     &kp RIGHT_ARROW  &kp Z      &kp W          &kp G      &kp K            &kp V       &kp TAB
-&mo 1       &kp LEFT_ALT  &kp SPACE     &kp SPACE     &kp LEFT_GUI   &kp ESC      &kp ENTER        &kp SEMI    &kp BACKSPACE  &kp ENTER  &kp ENTER        &mo 2
+&kp SEMI       &kp N1     &kp N2        &kp N3        &kp N4      &kp N5         &kp UP_ARROW     &kp N6     &kp N7         &kp N8     &kp N9           &kp N0      &kp SEMI
+&kp LEFT_ALT   &kp FSLH   &kp P         &kp O         &kp U       &kp COMMA      &kp DOWN_ARROW   &kp DOT    &kp D          &kp L      &kp C            &kp X       &kp RCTRL
+&kp LSHFT      &kp I      &kp N         &kp E         &kp A       &kp B          &kp LEFT_ARROW   &kp M      &kp H          &kp T      &kp S            &kp R       &kp APOS
+&kp LCTRL      &kp Q      &kp J         &kp F         &kp Y       &kp BSLH       &kp RIGHT_ARROW  &kp Z      &kp W          &kp G      &kp K            &kp V       &kp TAB
+&mo 1          &mo 2      &kp SPACE     &kp SPACE     &kp LSHFT   &kp LEFT_GUI   &kp ENTER        &kp ESC    &kp BACKSPACE  &kp ENTER  &kp ENTER        &mo 2
             >;
             sensor-bindings = <&rsr_vol &rsr_trans>;
 
@@ -96,11 +96,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&trans      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &mmv MOVE_UP     &kp F6     &kp F7      &kp F8      &kp F9               &kp F10            &trans
+&trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &mmv MOVE_DOWN   &kp N6     &kp N7      &kp N8      &kp N9               &kp N0             &trans
+&trans      &kp LEFT    &kp UP      &kp DOWN    &kp RIGHT   &trans      &mmv MOVE_LEFT   &kp SEMI   &kp COMMA   &kp DOT     &kp LEFT_BRACKET     &kp RIGHT_BRACKET  &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &mmv MOVE_RIGHT  &trans     &kp MINUS   &kp PLUS    &kp GRAVE            &kp BSLH           &trans
+&trans      &trans      &trans      &trans      &trans      &trans      &mkp LCLK        &trans     &kp LPAR    &kp RPAR    &trans               &trans
             >;
 
             display-name = "layer1";
